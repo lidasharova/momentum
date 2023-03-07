@@ -485,12 +485,6 @@ a.rss:hover {
   margin-left: 4px;
 }
 
-.button-active {
-  background-color: rgb(55, 66, 121);
-  color: #fff;
-  cursor: pointer;
-}
-
 .hide {
   opacity: 0;
 }
@@ -600,7 +594,7 @@ a.rss:hover {
   }
   .weather {
     width: 117px;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .align-items {
     font-size: 15px;
@@ -613,7 +607,7 @@ a.rss:hover {
   }
   .player-controls {
     width: 245px;
-    margin-left: 8px;
+    margin-left: 15px;
   }
   .container-time-audio {
     width: 150px;
@@ -628,14 +622,15 @@ a.rss:hover {
     column-gap: 3px;
   }
   .weather-icon {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .settings-container {
-    width: 390px;
+    width: 350px;
   }
   .settings {
     border-radius: 20px;
     top: 94%;
+    background-color: rgba(255, 255, 255, 0.722);
   }
   .setting-img {
     top: 86%;
@@ -647,6 +642,8 @@ a.rss:hover {
     border-radius: 4px;
     color: black;
     background-color: rgb(95 113 213 / 83%);
+    font-weight: bold;
+    margin-bottom: 6px;
   }
   .slider-icon {
     top: 65%;
@@ -655,12 +652,13 @@ a.rss:hover {
   .set-title {
     color: black;
     font-weight: bold;
+    margin-right: 10px;
   }
   .item-song {
     width: 200px;
   }
   .header {
-    padding: 10px 5px;
+    padding: 15px 10px;
   }
 
   .item-song::before {
@@ -671,4 +669,30 @@ a.rss:hover {
   .slide-next {
     right: 0px;
   }
+  .change-quote {
+    margin-bottom: 18px;
+    background-size: 15px;
+  }
+  .footer {
+    padding: 0px 10px;
+  }
+  .body {
+    min-width: 390px;
+  }
+  .set-title {
+    margin-right: 0px;
+  }
+  .buttons-container {
+    max-width: 250px;
+    justify-content: flex-end;
+  }
+  .ct {
+    align-items: center;
+  }
+}
+
+.button-active {
+  background-color: rgb(54 72 159);
+  color: #fff;
+  cursor: pointer;
 }
