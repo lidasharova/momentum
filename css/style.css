@@ -10,7 +10,7 @@
 }
 
 body {
-  min-width: 480px;
+  min-width: 320px;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
@@ -339,27 +339,6 @@ body {
   transition: 0.5s;
 }
 
-@media (max-width: 768px) {
-  .time {
-    min-height: 80px;
-    font-size: 52px;
-  }
-
-  .greeting-container {
-    min-height: 40px;
-    font-size: 32px;
-  }
-
-  .greeting {
-    padding: 5px;
-  }
-
-  .name {
-    font-size: 32px;
-    padding: 5px;
-  }
-}
-
 .quote-container {
   display: flex;
   flex-direction: column;
@@ -583,13 +562,35 @@ a.rss:hover {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .time {
+    min-height: 80px;
+    font-size: 40px;
+  }
+
+  .greeting-container {
+    min-height: 40px;
+    font-size: 25px;
+  }
+
+  .greeting {
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 32px;
+    padding: 5px;
+  }
+}
+
 @media (max-width: 500px) {
   .time {
-    font-size: 30px;
+    min-height: 45px;
+    font-size: 25px;
     letter-spacing: 1px;
   }
   .date {
-    font-size: 25px;
+    font-size: 20px;
   }
   .greeting-container {
     font-size: 20px;
@@ -621,7 +622,7 @@ a.rss:hover {
     width: 135px;
     height: 4px;
     background-color: #e5e3e3;
-    margin: 4px 0 18px 7px;
+    margin: 5px 0px 5px 10px;
   }
   .description-container {
     column-gap: 3px;
@@ -644,6 +645,30 @@ a.rss:hover {
     width: 60px;
     height: 26px;
     border-radius: 4px;
+    color: black;
     background-color: rgb(95 113 213 / 83%);
+  }
+  .slider-icon {
+    top: 65%;
+    margin-top: -10px;
+  }
+  .set-title {
+    color: black;
+    font-weight: bold;
+  }
+  .item-song {
+    width: 200px;
+  }
+  .header {
+    padding: 10px 5px;
+  }
+
+  .item-song::before {
+    left: 3px;
+    font-weight: 600;
+    margin-left: 0px;
+  }
+  .slide-next {
+    right: 0px;
   }
 }
