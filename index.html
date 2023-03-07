@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="volume-wrapper">
+          <div class="volume-button"></div>
+          <div class="volume-container">
+            <div class="volume"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- //дорожка проигрывателя -->
+      <div class="container-time-audio">
+        <div class="current-time">00:00</div>
+        <div class="time-left">00:00</div>
+      </div>
+      <div class="audio-track">
+        <div class="time-song"></div>
+      </div>
+      <!-- //дорожка проигрывателя -->
+      <div class="container-playlist">
+        <ul class="play-list">
+        </ul>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" name="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="weather-humidity"></div>
+      <div class="weather-wind"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="setting-img"></div>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" name="name" placeholder="here you can write your name :)" />
+    </div>
+
+
+    <div class="settings">
+      <h3>Settings</h3>
+      <div class="settings-container">
+        <div class="lang ct">
+          <div class="set-title">Language:</div>
+          <form id="languages">
+            <input id="ru" type="radio" name="language" value="ru">
+            <span class="input-radio"></span>
+            <label for="ru">ru</label>
+            <input id="en" type="radio" name="language" value="en">
+            <span class="input-radio"></span>
+            <label for="en">en</label>
+          </form>
+        </div>
+        <div class="background ct">
+          <div class="set-title">Background:</div>
+          <div class="buttons-container">
+            <button class="button-unactive GitHub">GitHub</button>
+            <button class="button-unactive Unsplash">Unsplash</button>
+            <button class="button-unactive Flickr">Flickr</button>
+          </div>
+        </div>
+        <div class="display ct">
+          <div class="set-title">Display:</div>
+          <div class="buttons-container">
+            <button class="button-unactive Player">Player</button>
+            <button class="button-unactive Weather">Weather</button>
+            <button class="button-unactive Time">Time</button>
+            <button class="button-unactive Quote">Quote</button>
+            <button class="button-unactive Date">Date</button>
+            <button class="button-unactive Greeting">Greeting</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="quote-container">
+        <button class="change-quote"></button>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="links-container">
+      <div class="year">2023 <a href="https://github.com/lidasharova" class="github-link">lidasharova</a></div>
+      <a class="rss" href="https://rs.school/js/"></a>
+    </div>
+  </footer>
+  <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>
