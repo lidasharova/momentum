@@ -1,4 +1,4 @@
-# [MOMENTUM](https://lidasharova.github.io/momentum/) 
+# [MOMENTUM](https://lidasharova-momentum.netlify.app/) 
 Momentum is similar to the Chrome Web Store app. 
 The application shows the time and username. 
 The background image and greeting changes depending on the time of day.
