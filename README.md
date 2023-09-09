@@ -16,3 +16,6 @@ Local storage is used to store the username and location.
 - division of js-code into modules;
 - work with asynchronous requests;
 - ability to work with popular Images API: Unsplash API and Flickr API.
+
+### :eyes: Deploy - [momentum](https://lidasharova-momentum.netlify.app/)
+
